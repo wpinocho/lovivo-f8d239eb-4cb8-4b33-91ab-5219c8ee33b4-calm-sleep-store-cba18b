@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { Label } from '@/components/ui/label'
-import { Moon, Thermometer, Pillow, ArrowRight } from 'lucide-react'
+import { Moon, Thermometer, Bed, ArrowRight } from 'lucide-react'
 
 interface QuizQuestion {
   id: string
@@ -16,7 +16,7 @@ const questions: QuizQuestion[] = [
   {
     id: 'position',
     question: 'What is your primary sleep position?',
-    icon: <Pillow className="h-6 w-6" />,
+    icon: <Bed className="h-6 w-6" />,
     options: [
       { value: 'back', label: 'Back sleeper' },
       { value: 'side', label: 'Side sleeper' },
