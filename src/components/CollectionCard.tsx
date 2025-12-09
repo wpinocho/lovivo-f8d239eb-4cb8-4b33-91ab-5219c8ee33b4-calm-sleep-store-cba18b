@@ -9,7 +9,7 @@ interface CollectionCardProps {
 
 export const CollectionCard = ({ collection, onViewProducts }: CollectionCardProps) => {
   return (
-    <Card className="bg-white border border-gray-200 overflow-hidden">
+    <Card className="bg-card hover:shadow-xl transition-all duration-300 overflow-hidden border">
       <CardContent className="p-0">
         <div className="aspect-[4/3] bg-gray-100 overflow-hidden">
           {collection.image ? (
@@ -44,8 +44,8 @@ export const CollectionCard = ({ collection, onViewProducts }: CollectionCardPro
           )}
           
           <Button 
-            variant="outline" 
-            className="w-full text-black border-gray-300 hover:bg-gray-50"
+            variant="default" 
+            className="w-full"
             onClick={() => onViewProducts(collection.id)}
           >
             View Products

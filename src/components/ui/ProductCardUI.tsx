@@ -26,7 +26,7 @@ export const ProductCardUI = ({ product }: ProductCardUIProps) => {
   return (
     <HeadlessProductCard product={product}>
       {(logic) => (
-        <Card className="bg-white border border-gray-200">
+        <Card className="bg-card hover:shadow-lg transition-all duration-300 border">
           <CardContent className="p-4">
             <Link to={`/products/${logic.product.slug}`} className="block">
               <div className="aspect-square bg-gray-100 rounded-md mb-3 overflow-hidden relative">
@@ -139,16 +139,15 @@ export const ProductCardUI = ({ product }: ProductCardUIProps) => {
                 )}
               </div>
               <Button
-                variant="outline"
+                variant="default"
                 size="sm"
                 onClick={() => {
-                  logic.onAddToCartSuccess() // Hook para features adicionales
+                  logic.onAddToCartSuccess()
                   logic.handleAddToCart()
                 }}
                 disabled={!logic.canAddToCart}
-                className="text-black border-black hover:bg-black hover:text-white disabled:opacity-50"
               >
-                {logic.inStock ? 'Add' : 'Out of stock'}
+                {logic.inStock ? 'Add to Cart' : 'Out of stock'}
               </Button>
             </div>
           </CardContent>

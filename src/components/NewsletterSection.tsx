@@ -16,7 +16,7 @@ export const NewsletterSection = () => {
   return (
     <HeadlessNewsletter>
       {(logic) => (
-        <section className="bg-muted/30 py-16 border-y">
+        <section className="bg-secondary/50 py-16 border-y">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             {logic.success ? (
               <div className="space-y-4">
@@ -36,10 +36,10 @@ export const NewsletterSection = () => {
               <div className="space-y-6">
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold text-foreground">
-                    Want promotional emails?
+                    Sleep Better Starts Here
                   </h3>
                   <p className="text-lg text-muted-foreground">
-                    Subscribe to our newsletter and get exclusive offers
+                    Get exclusive sleep tips, product updates, and special offers
                   </p>
                 </div>
                 
