@@ -26,7 +26,9 @@ export const HeroSection = () => {
             <br />
             <span className="text-primary">Wake Refreshed</span>
           </h1>
-          <p style={{ fontSize: '25px', letterSpacing: '0px' }} className="text-xl text-muted-foreground mb-8 leading-relaxed">
+          <p style={{ fontSize: '20px', letterSpacing: '0px',
+              color: '#545454',
+              fontWeight: '300', }} className="text-xl text-muted-foreground mb-8 leading-relaxed">
             Discover scientifically designed sleep products that transform your rest. From premium pillows to natural supplements, find your perfect sleep setup.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
