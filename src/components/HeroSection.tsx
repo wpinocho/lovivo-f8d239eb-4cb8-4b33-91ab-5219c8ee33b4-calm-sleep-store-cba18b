@@ -12,7 +12,7 @@ export const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: "url('https://ptgmltivisbtvmoxwnhd.supabase.co/storage/v1/object/public/product-images/f8d239eb-4cb8-4b33-91ab-5219c8ee33b4/hero-bedroom.jpg')",
+          backgroundImage: "url('https://qewrwgexxrzvxiihmgyo.supabase.co/storage/v1/object/public/product-images/df68dd66-5a6d-4f61-9b6f-a26faf4cba48.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
