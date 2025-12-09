@@ -24,7 +24,7 @@ export const HeroSection = () => {
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
             Sleep Better,
             <br />
-            <span className="text-primary">Wake Refreshed</span>
+            <span style={{ letterSpacing: '0px' }} className="text-primary">Wake Refreshed!</span>
           </h1>
           <p style={{ fontSize: '20px', letterSpacing: '0px',
               color: '#545454',
